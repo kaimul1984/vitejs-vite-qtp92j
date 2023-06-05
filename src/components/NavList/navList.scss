@@ -1,0 +1,113 @@
+@import '../../global.scss';
+
+nav {
+  cursor: pointer;
+  ul {
+    display: flex;
+    gap: 30px;
+    a {
+      font-size: 16px;
+      font-weight: 300;
+      color: #fff;
+    }
+    svg {
+      color: #fff;
+    }
+    li {
+      padding: 0 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      transition: opacity 0.5s;
+
+      &:hover {
+        //box-shadow: 0 0 20px 1px #979494;
+        background-color: #ddd;
+        svg,
+        a {
+          color: #000;
+        }
+      }
+      // product submenu //
+
+      .subNavList {
+        width: 250px;
+        //height: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #ddd;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        transform: scale(0);
+        transition: transform 0.3s linear;
+        box-shadow: 2px 1px 1px #979494;
+        z-index: 999;
+        li {
+          display: flex;
+          align-items: center;
+          margin-left: 5px;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            //height: 100%;
+            height: 0;
+            background-color: red;
+            right: 0;
+
+            transition: all 0.3s;
+          }
+
+          &:hover {
+            a {
+              color: red;
+            }
+            &::after {
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      &:hover .subNavList {
+        transform: scale(1);
+      }
+
+      
+    }
+  }
+}
+
+
+//  brand submenu//
+// &:nth-child(2) .subNavList{
+//   background-color: #fff;
+//   box-shadow: 0 0 10px 1px #000;
+//   width: 700px;
+//   height: 300px;
+//   padding: 2rem;
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+
+//   li{
+//       width: 100px;
+//       transition: transform .3s;
+//       img{
+//       width: 100%;
+//       object-fit: contain;
+//   }
+//   &:hover{
+//       background-color: #fff;
+//       transform: scale(1.3);
+
+//       &::after{
+//           display: none;
+//       }
+//   }
+//   }
+// }

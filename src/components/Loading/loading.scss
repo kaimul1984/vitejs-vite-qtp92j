@@ -1,0 +1,30 @@
+
+
+.loading{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .spiner{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    animation: spin-anim 3s linear infinite;
+  img{
+    width: 100%;
+  }
+  }
+
+}
+
+@keyframes spin-anim {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

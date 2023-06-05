@@ -1,0 +1,36 @@
+.cta {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(11, 64, 163);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  .info {
+    text-align: left;
+    h3 {
+      color: #fff;
+    }
+  }
+  .call{
+    padding: .5rem 2rem;
+    background-color: rgb(221, 173, 16);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    a{
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: #fff;
+
+    }
+    svg{
+      color: #fff;
+      font-size: 1.3rem;
+
+
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.home{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  h2{
+    margin: 30px 0;
+  }
+  .container{
+    width: 95%;
+    max-width: 1200px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(206, 192, 192);
+    .card {
+      width: 100%;
+      max-width: 350px;
+      height: 200px;
+      background-color: #fff;
+    }
+  }
+}
